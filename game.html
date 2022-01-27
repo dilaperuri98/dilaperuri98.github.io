@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="StyleSheet.css" rel="stylesheet">
+    <title>Lets Play Game!</title>
+</head>
+<style>
+.block{
+  align-items: center;
+  position:absolute;
+  top:50%;
+  left:55%;
+  transform:translate(-50%,-50%);
+}
+</style>
+<body class="bg-game">
+    <input class="back back1" onclick="location.href='Menu.html'" type="image" src="button/back_btn.svg" alt="Submit" height="80x">
+
+    <div class="block">
+        <input type="image" src="button/game1.svg" alt="Submit" width="200px" height="200px" onclick="location.href='game_guess.html'">
+        <input type="image" src="button/game2.svg" alt="Submit" width="200px" height="200px" onclick="location.href='game_link.html'">
+        <input type="image" src="button/game3.svg" alt="Submit" width="200px" height="200px" onclick="location.href='game_drag.html'">
+        
+    </div>
+
+    <div class="rectangle">
+       
+        <ul><input type="image" src="button/topic_btn2.png" alt="Submit"height="100px" onclick="location.href='topic.html'"></ul></br>
+        <ul><input type="image" src="button/quiz_btn2.png" alt="Submit" height="100px" onclick="location.href='quiz.html'"></ul></br>
+        <ul><input type="image" src="button/game_btn2.png" alt="Submit" height="125px" ></ul></br>
+        <ul><input type="image" src="button/craft_btn2.png" alt="Submit"height="100px" onclick="location.href='craft.html'"></ul>
+    
+    </div>
+
+</body>
+</html>

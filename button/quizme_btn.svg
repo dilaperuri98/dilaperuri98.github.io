@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248" height="61" viewBox="0 0 248 61">
+  <defs>
+    <path id="path-1" fill-rule="evenodd" d="M12 2h224.00002c4.4153202 0 8 3.5846798 8 8v37.00002c0 4.4153202-3.5846798 8-8 8H12c-4.4153202 0-8-3.5846798-8-8V10c0-4.4153202 3.5846798-8 8-8z"/>
+    <filter id="filter-2" width="200%" height="200%" x="-50%" y="-50%" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2" in="SourceAlpha" result="shadow-1-feOffset-shadow"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation="2.41"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g>
+    <g>
+      <use fill="black" stroke="black" stroke-opacity="0" stroke-width="0" filter="url(#filter-2)" xlink:href="#path-1"/>
+      <use fill="rgb(0,146,216)" xlink:href="#path-1"/>
+    </g>
+    <text font-size="0" style="white-space:pre">
+      <tspan x="62.212" y="35" fill="rgb(255,255,255)" font-family="Janda Manatee Solid" font-size="30" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing="2.571">Quiz me</tspan>
+    </text>
+  </g>
+</svg>

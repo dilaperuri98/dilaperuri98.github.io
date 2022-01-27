@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="StyleSheet.css" rel="stylesheet">
+    <title>Topics</title>
+</head>
+<style>
+
+.topic{
+  align-items: center;
+  position:absolute;
+  left:52%;
+  top: 45%;
+  transform:translate(-50%,-50%);
+}
+.up{top:10%;}
+
+.down{top:80%;}
+</style>
+<body class="bg-topics">
+    <input class="back back1" onclick="location.href='Menu.html'" type="image" src="button/back_btn.svg" alt="Submit" height="80x">
+    
+
+    <div class="slider">
+
+        <div class="topic">
+            <input type="image" src="images/1.svg" width="200" height="250" onclick="location.href='topic01.html'" class="slider-img">
+        </div>
+
+        <div class="topic up" onclick="prev()"><input type="image" src="button/uparrow.svg" width="150" height="200" ></div>
+        <div class="topic down" onclick="next()"><input type="image" src="button/downarrow.svg" width="150" height="200" ></div>
+    </div>
+    <script src="main.js"></script>
+    
+    <div class="rectangle">
+       
+        <ul><input type="image" src="button/topic_btn2.png" alt="Submit"height="125px" ></ul></br>
+        <ul><input type="image" src="button/quiz_btn2.png" alt="Submit" height="100px" onclick="location.href='quiz.html'"></ul></br>
+        <ul><input type="image" src="button/game_btn2.png" alt="Submit" height="100px" onclick="location.href='game.html'"></ul></br>
+        <ul><input type="image" src="button/craft_btn2.png" alt="Submit"height="100px" onclick="location.href='craft.html'"></ul>
+
+    </div>
+    
+</body>
+</html>

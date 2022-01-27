@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <rect width="20" height="719" x="59" y="-12" fill="rgb(147,72,31)"/>
+  <ellipse cx="368" cy="822" fill="rgb(63,170,37)" rx="435" ry="163"/>
+  <ellipse cx="975" cy="822" fill="rgb(126,204,107)" rx="435" ry="163"/>
+  <rect width="12" height="51" x="1110" y="635" fill="rgb(196,98,45)"/>
+  <rect width="18" height="103" x="1192" y="608" fill="rgb(147,72,31)"/>
+  <ellipse cx="1116.5" cy="608.5" fill="rgb(29,91,21)" rx="24.5" ry="40.5"/>
+  <ellipse cx="1201" cy="530.5" fill="rgb(28,104,19)" rx="55" ry="81.5"/>
+  <text font-size="0" style="white-space:pre">
+    <tspan x="519" y="146" fill="rgb(28,104,19)" font-family="Janda Manatee Solid" font-size="75" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing="4.286">Quizzes</tspan>
+  </text>
+</svg>

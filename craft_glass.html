@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title>DIY Time</title>
+  </head>
+  <style>
+    #paper {
+      align-items: center;
+      position: absolute;
+      top: 12%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
+    #paperbag {
+      align-items: center;
+      position: absolute;
+      top: 12%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #glass {
+      align-items: center;
+      position: absolute;
+      top: 12%;
+      left: 70.7%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <body class="bg-craft01">
+    <input class="back back1" onclick="location.href='craft.html'" type="image" src="button/back_btn.svg" alt="Submit" height="80x">
+    <div id="myMenu">
+      
+      <input
+        id="paper"
+        type="image"
+        src="button/paper_btn.svg"
+        alt="Submit"
+        width="150px"
+        height="175px"
+        onclick="paper()"
+      />
+      <input
+        id="paperbag"
+        type="image"
+        src="button/paperbag_btn.svg"
+        alt="Submit"
+        width="150px"
+        height="175px"
+        onclick="paperbag()"
+        
+      />
+      <input
+        id="glass"
+        type="image"
+        src="button/glass_btn.svg"
+        alt="Submit"
+        width="200px"
+        height="225px"
+        onclick="glass()"
+      />
+    </div>
+
+    <div class="slider-vid"></div>
+    <video class="craft-video" controls id="video">
+      <source id = "elVideo" src="Craft/craft_glass.mp4" type=video/mp4 >
+    </video>
+  </body>
+  <script>
+    function paper() {
+      document.getElementById("paper").style.width = "200px";
+      document.getElementById("paper").style.height = "225px";
+      document.getElementById("glass").style.width = "150px";
+      document.getElementById("glass").style.height = "175px";
+      document.getElementById("paperbag").style.width = "150px";
+      document.getElementById("paperbag").style.height = "175px";
+      actionVideo("Craft\\craft_paper.mp4");
+    }
+
+    function glass() {
+      document.getElementById("paper").style.width = "150px";
+      document.getElementById("paper").style.height = "175px";
+      document.getElementById("glass").style.width = "200px";
+      document.getElementById("glass").style.height = "225px";
+      document.getElementById("paperbag").style.width = "150px";
+      document.getElementById("paperbag").style.height = "175px";
+      actionVideo("Craft\\craft_glass.mp4");
+    }
+    function paperbag() {
+      document.getElementById("paper").style.width = "150px";
+      document.getElementById("paper").style.height = "175px";
+      document.getElementById("glass").style.width = "150px";
+      document.getElementById("glass").style.height = "175px";
+      document.getElementById("paperbag").style.width = "200px";
+      document.getElementById("paperbag").style.height = "225px";
+      actionVideo("Craft\\craft_plastic.mp4");
+    }
+    function actionVideo(src) {
+      changeVideo("video", src);
+    }
+    let countClick = 0;
+    function changeVideo(element_id, src) {
+      var video = document.getElementById(element_id);
+      var source = document.createElement("source");
+
+      source.setAttribute("src", src);
+      source.setAttribute("type", "video/mp4");
+
+      video.innerHTML = "";
+      video.appendChild(source);
+      video.load();
+    }
+  </script>
+</html>

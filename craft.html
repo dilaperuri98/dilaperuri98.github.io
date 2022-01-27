@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="StyleSheet.css" rel="stylesheet">
+    <title>Craft</title>
+    
+</head>
+<style>
+.triangle{
+  align-items: center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-40%,-50%);
+}
+.paper{
+margin-right: 20px;
+}
+.paperbag{
+margin-right: 20px;
+}
+.glass{
+margin-right: 20px;
+}
+
+</style>
+<body class="bg-craft">
+    <input class="back back1" onclick="location.href='Menu.html'" type="image" src="button/back_btn.svg" alt="Submit" height="80x">
+  
+    <div class="triangle">
+        <input class="paper" type="image" src="button/paper_btn.svg" alt="Submit" width="200px" height="225px" onclick="location.href='craft_paper.html'">
+        <input class="paperbag" type="image" src="button/paperbag_btn.svg" alt="Submit" width="200px" height="225px" onclick="location.href='craft_plastic.html'">
+        <input class="glass" type="image" src="button/glass_btn.svg" alt="Submit" width="200px" height="225px" onclick="location.href='craft_glass.html'">
+    </div>
+    <div class="rectangle">
+       
+        <ul><input type="image" src="button/topic_btn2.png" alt="Submit"height="100px" onclick="location.href='topic.html'"></ul></br>
+        <ul><input type="image" src="button/quiz_btn2.png" alt="Submit" height="100px" onclick="location.href='quiz.html'"></ul></br>
+        <ul><input type="image" src="button/game_btn2.png" alt="Submit" height="100px" onclick="location.href='game.html'"></ul></br>
+        <ul><input type="image" src="button/craft_btn2.png" alt="Submit"height="125px" ></ul>
+    
+    </div>
+    
+</body>
+</html>

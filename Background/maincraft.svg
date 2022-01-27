@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="800" viewBox="0 0 1280 800">
+  <defs>
+    <path id="path-1" fill-rule="evenodd" d="M1130-5h118c4.4153202 0 8 3.5846798 8 8v65c0 4.4153202-3.5846798 8-8 8h-118c-4.4153202 0-8-3.5846798-8-8V3c0-4.4153202 3.5846798-8 8-8z"/>
+    <filter id="filter-2" width="200%" height="200%" x="-50%" y="-50%" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="2" in="SourceAlpha" result="shadow-1-feOffset-shadow"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation="2.41"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g>
+    <g>
+      <use fill="black" stroke="black" stroke-opacity="0" stroke-width="0" filter="url(#filter-2)" xlink:href="#path-1"/>
+      <use fill="rgb(63,170,37)" xlink:href="#path-1"/>
+    </g>
+    <text font-size="0" style="white-space:pre">
+      <tspan x="1151" y="45" fill="rgb(255,255,255)" font-family="Alba Matter" font-size="35" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing="3">Back</tspan>
+    </text>
+    <rect width="25" height="134" x="633" y="-32" fill="rgb(147,72,31)"/>
+    <rect width="25" height="134" x="877" y="-28" fill="rgb(147,72,31)"/>
+    <rect width="25" height="134" x="375" y="-32" fill="rgb(147,72,31)"/>
+    <path fill="rgb(200,200,200)" fill-rule="evenodd" d="M196 215h909c4.4153202 0 8 3.5846798 8 8v515c0 4.4153202-3.5846798 8-8 8H196c-4.4153202 0-8-3.5846798-8-8V223c0-4.4153202 3.5846798-8 8-8z"/>
+    <path fill="rgb(244,50,66)" fill-rule="evenodd" d="M196 700h909c4.4153202 0 8 3.5846798 8 8v30c0 4.4153202-3.5846798 8-8 8H196c-4.4153202 0-8-3.5846798-8-8v-30c0-4.4153202 3.5846798-8 8-8z"/>
+    <ellipse cx="670" cy="723.5" fill="rgb(244,152,48)" rx="17" ry="17.5"/>
+    <ellipse cx="713" cy="723.5" fill="rgb(0,146,216)" rx="10" ry="10.5"/>
+    <ellipse cx="628" cy="723.5" fill="rgb(63,170,37)" rx="10" ry="10.5"/>
+  </g>
+</svg>

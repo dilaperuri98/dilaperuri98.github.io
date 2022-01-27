@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="StyleSheet.css" rel="stylesheet">
+    <title>Games|Link The Waste</title>
+</head>
+<style>
+
+
+    #myMenu{
+      position:absolute;
+      top:10%;
+      left:5%;
+    }
+    </style>
+    <body class="bg-game01">
+      <input class="back back1" onclick="location.href='game.html'" type="image" src="button/back_btn.svg" alt="Submit" height="80px">
+        <div id="myMenu">
+          
+            <ul><input
+              id="guess"
+              type="image"
+              src="button/game1.svg"
+              alt="Submit"
+              width="175px"
+              height="175px"
+              onclick="guess()"
+            /></ul>
+            <ul><input
+              id="link"
+              type="image"
+              src="button/game2.svg"
+              alt="Submit"
+              width="200px"
+              height="200px"
+              onclick="link()"
+              
+            /></ul>
+            <ul><input
+              id="drag"
+              type="image"
+              src="button/game3.svg"
+              alt="Submit"
+              width="175px"
+              height="175px"
+              onclick="drag()"
+            /></ul>
+          </div>
+      
+          <div class="slider-game"></div>
+          
+          <object class="link" >
+<embed src="tutorial_linked (1).swf" width="800px" height="600px"></embed></object>
+
+        </body>
+        <script>
+            function guess() {
+              document.getElementById("guess").style.width = "200px";
+              document.getElementById("guess").style.height = "200px";
+              document.getElementById("link").style.width = "175px";
+              document.getElementById("link").style.height = "175px";
+              document.getElementById("drag").style.width = "175px";
+              document.getElementById("drag").style.height = "175px";
+              actionVideo("Craft\\craft_piggybank.mp4.mp4");
+            }
+        
+            function link() {
+              document.getElementById("guess").style.width = "175px";
+              document.getElementById("guess").style.height = "175px";
+              document.getElementById("link").style.width = "200px";
+              document.getElementById("link").style.height = "200px";
+              document.getElementById("drag").style.width = "150px";
+              document.getElementById("drag").style.height = "175px";
+              actionVideo("Craft\\craft_cup.mp4");
+            }
+            function drag() {
+              document.getElementById("guess").style.width = "175px";
+              document.getElementById("guess").style.height = "175px";
+              document.getElementById("link").style.width = "175px";
+              document.getElementById("link").style.height = "175px";
+              document.getElementById("drag").style.width = "200px";
+              document.getElementById("drag").style.height = "200px";
+              actionVideo("Craft\\craft_roll.mp4");
+            }
+            function actionVideo(src) {
+              changeVideo("video", src);
+            }
+            let countClick = 0;
+            function changeVideo(element_id, src) {
+              var video = document.getElementById(element_id);
+              var source = document.createElement("source");
+        
+              source.setAttribute("src", src);
+              source.setAttribute("type", "video/mp4");
+        
+              video.innerHTML = "";
+              video.appendChild(source);
+              video.load();
+            }
+          </script>
+    </body>
+    </html>
