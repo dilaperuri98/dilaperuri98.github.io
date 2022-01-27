@@ -1,1 +1,87 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+</head>
+
+<style> 
+*{
+  box-sizing: border-box;
+}
+.start{
+  align-items: center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+}
+
+.start:hover {
+  opacity: 50%;
+} 
+
+.progress-bar{
+  width:506px;
+  height:26px;
+  background-color:white;
+  border-radius: 13px;
+  padding: 3px;
+  position:absolute;
+  top:55%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  
+  
+}
+
+.progress{
+  width: 25px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: #45a049;
+}
+</style>
+
+<body class="bg-welcome">
+  
+
+  <input class= "start" id ="btn" type="image" src ="button/start.png" onclick ="location.href='menu.html'" value="Start" >
+  
+  <div id="percentCount" class="percent-count"></div>
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+
+
+<script >
+
+  function progress(){
+   var prg = document.getElementById('progress');
+   var progress = 25;
+   var id = setInterval(frame, 50);
+
+   function frame(){
+     if (progress == 500){
+       clearInterval(id);
+       document.getElementById("progress").style.display="none";
+       document.getElementById("btn").style.display="inline";
+       
+     }else{
+       progress += 5;
+       prg.style.width = progress + 'px';
+       document.getElementById("btn").style.display="none";
+     }
+   } 
+  }
+
+  progress();
+
+</script>
+</body>
+</html>
