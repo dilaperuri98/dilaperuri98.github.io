@@ -11,29 +11,50 @@
     <!--<script src="menu_script.js"></script>-->
 </head>
 
-<script>
-    var audioElement= new
-    Audio('The-Beginning-w-Caturday.mp3');
-    audioElement.play();
-    </script>
+
 <style>
-    .oval{
+.intro{
+  align-items: center;
+  position:absolute;
+  display: inline-block;
+  top:70%;
+  left:51%;
+  transform:translate(-50%,-50%);
+  width: 700px;
+  height: 300px;
+
+}
+
+
+.oval{
     align-items: center;
     position:absolute;
     top:35%;
     left:50%;
     transform:translate(-50%,-50%);
-    min-width: 35vw;
+    min-width: 40vw;
     justify-content: space-between;
     display: flex;
     
 }
-.oval-btm{
-    top:65%;
-}
+
 </style>
 <body class="bg-menu" >
-    
+    <div class="oval">
+        <input type="image" src="button/topic_btn.svg" alt="Submit" width="100px" height="125px" onclick="location.href='topic.html'">
+        <input type="image" src="button/quiz_btn.svg" alt="Submit" width="100px" height="125px" onclick="location.href='quiz.html'">
+        <input type="image" src="button/game_btn.svg" alt="Submit" width="100px" height="125px" onclick="location.href='game.html'">
+        <input type="image" src="button/craft_btn.svg" alt="Submit" width="100px" height="125px" onclick="location.href='craft.html'">
+    </div>
+    <video class="intro" controls autoplay>
+        <source src="introduction.mp4" type=video/mp4 ></video>
+    <p id="demo"></p>
+   
+</body>
+
+
+
+</html>
     <!--<nav>
         <div class="grid-container">
             <div class="content" id="content">
