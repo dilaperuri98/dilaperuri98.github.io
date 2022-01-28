@@ -10,8 +10,11 @@
   
 .game{
   position:absolute;
-  top:50px;
-  right:0px;
+  position:absolute;
+  display: inline-block;
+  top:58%;
+  left:51%;
+  transform:translate(-50%,-50%);
 }   
 
 
@@ -67,47 +70,20 @@
     </body>
     <script>
         function guess() {
-          document.getElementById("guess").style.width = "200px";
-          document.getElementById("guess").style.height = "200px";
-          document.getElementById("link").style.width = "175px";
-          document.getElementById("link").style.height = "175px";
-          document.getElementById("drag").style.width = "175px";
-          document.getElementById("drag").style.height = "175px";
-          actionVideo("Craft\\craft_piggybank.mp4.mp4");
+          
         }
     
         function link() {
-          document.getElementById("guess").style.width = "175px";
-          document.getElementById("guess").style.height = "175px";
-          document.getElementById("link").style.width = "200px";
-          document.getElementById("link").style.height = "200px";
-          document.getElementById("drag").style.width = "150px";
-          document.getElementById("drag").style.height = "175px";
-          actionVideo("Craft\\craft_cup.mp4");
+         
         }
         function drag() {
-          document.getElementById("guess").style.width = "175px";
-          document.getElementById("guess").style.height = "175px";
-          document.getElementById("link").style.width = "175px";
-          document.getElementById("link").style.height = "175px";
-          document.getElementById("drag").style.width = "200px";
-          document.getElementById("drag").style.height = "200px";
-          actionVideo("Craft\\craft_roll.mp4");
+         
         }
         function actionVideo(src) {
-          changeVideo("video", src);
+          
         }
-        let countClick = 0;
-        function changeVideo(element_id, src) {
-          var video = document.getElementById(element_id);
-          var source = document.createElement("source");
-    
-          source.setAttribute("src", src);
-          source.setAttribute("type", "video/mp4");
-    
-          video.innerHTML = "";
-          video.appendChild(source);
-          video.load();
+        
+        
         }
       </script>
 </body>
