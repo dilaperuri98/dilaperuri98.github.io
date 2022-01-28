@@ -27,7 +27,7 @@
               alt="Submit"
               width="175px"
               height="175px"
-              onclick="guess()"
+              onclick="location.href='game_guess.html'"
             /></ul>
             <ul><input
               id="link"
@@ -38,15 +38,6 @@
               height="200px"
               onclick="link()"
               
-            /></ul>
-            <ul><input
-              id="drag"
-              type="image"
-              src="button/game3.svg"
-              alt="Submit"
-              width="175px"
-              height="175px"
-              onclick="drag()"
             /></ul>
           </div>
       
@@ -76,15 +67,7 @@
               document.getElementById("drag").style.height = "175px";
               actionVideo("Craft\\craft_cup.mp4");
             }
-            function drag() {
-              document.getElementById("guess").style.width = "175px";
-              document.getElementById("guess").style.height = "175px";
-              document.getElementById("link").style.width = "175px";
-              document.getElementById("link").style.height = "175px";
-              document.getElementById("drag").style.width = "200px";
-              document.getElementById("drag").style.height = "200px";
-              actionVideo("Craft\\craft_roll.mp4");
-            }
+           
             function actionVideo(src) {
               changeVideo("video", src);
             }
