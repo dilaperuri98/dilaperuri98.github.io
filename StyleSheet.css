@@ -154,3 +154,19 @@ body{
       left: 59%;
       transform: translate(-50%, -50%);
 }
+.finish {
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  position:absolute;
+  bottom: 20px; 
+  right: 20px;
+  cursor: pointer;
+}
+
+
+
+.finish1:hover {
+  opacity: 50%;
+}
