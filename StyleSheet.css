@@ -37,34 +37,6 @@ body{
 }
 
 
-/*body*/
-
-/*.grid-container {
-    display: grid;
-    /* grid-template-columns: auto auto auto; 
-    justify-content: space-between;
-    padding: 10px;
-    
-}
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    font-size: 50px;
-    text-align: center;
-    
-}
-.content {
-    background-color: #4CAF50;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    vertical-align: middle;
-    cursor: pointer;
-    
-}*/
 
 .menu{
       display: none;
